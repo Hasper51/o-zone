@@ -37,7 +37,7 @@ closeBtn.addEventListener('click',() => {
 const cards = document.querySelectorAll('.goods .card'),
 cartWrapper = document.querySelector('.cart-wrapper'),
 cartEmpty = document.getElementById('cart-empty'),
-countGoods = document.querySelector('.counter')
+countGoods = document.querySelector('.counter');
 
 cards.forEach((card) => {
   const btn = card.querySelector('button');
@@ -50,8 +50,8 @@ cards.forEach((card) => {
 });
 
 function showData(){
-  const cards_in_cart = cartWrapper.querySelectorAll('.card');
-  countGoods.textContent = cards_in_cart.length;
+  const cardsInCart = cartWrapper.querySelectorAll('.card');
+  countGoods.textContent = cardsInCart.length;
   
 }
 //end Добавление, удаление товара
